@@ -3,11 +3,11 @@ name: Otomatik Release
 on:
   push:
     branches:
-      - main # Main branch'ine her kod gönderdiğinizde tetiklenir
+      - main
 
 jobs:
   release:
-    runs-on: windows-latest # Windows'ta derleme yapıyorsanız windows-latest daha sağlıklıdır
+    runs-on: ubuntu-latest
     permissions:
       contents: write
 
@@ -15,20 +15,21 @@ jobs:
       - name: Kodları Kopyala
         uses: actions/checkout@v4
 
-      # BURAYA KENDİ BUILD ADIMINIZI EKLEYİN
-      # Örneğin:
-      # - name: Setup .NET
-      #   uses: actions/setup-dotnet@v4
-      # - name: Publish
-      #   run: dotnet publish -c Release -o ./output
+      # Eski tüm release'leri silen adım
+      - name: Eski Release'leri Temizle
+        run: |
+          gh release delete latest --cleanup-tag --yes || echo "Henüz bir release yok."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Release'i Güncelle
+      # Yeni ve temiz release oluşturma adımı
+      - name: Güncel Release Oluştur
         uses: ncipollo/release-action@v1
         with:
-          tag: "latest" # Hep aynı tag'i kullanır, böylece sürekli güncellenir
-          allowUpdates: true # Varsa üzerine yazar
-          replacesArtifacts: true # Eskisini silip yenisini yükler
-          artifacts: "*.exe" # Veya output dizininizdeki exe'nin yolu (örn: ./output/*.exe)
+          tag: "latest"
           name: "En Son Sürüm"
-          body: "Bu sürüm otomatik olarak en son push işleminden oluşturulmuştur."
+          body: "Bu sürüm main branch'ine yapılan son commit ile otomatik olarak güncellenmiştir."
+          artifacts: "*.exe" 
+          makeLatest: true
           token: ${{ secrets.GITHUB_TOKEN }}
