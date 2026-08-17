@@ -1,8 +1,8 @@
-version: 1.0.31
+version: 1.0.32
 files:
-  - url: QTube-Setup-1.0.31.exe
-    sha512: dy8jK+oT9mxah2pM9K2bUdZWTEHpXNM1TqluiILOvGx/vLqKn3Ei4SN6ifkGzBetuUSa7ds7914UNJiLSdVR/A==
-    size: 91512594
-path: QTube-Setup-1.0.31.exe
-sha512: dy8jK+oT9mxah2pM9K2bUdZWTEHpXNM1TqluiILOvGx/vLqKn3Ei4SN6ifkGzBetuUSa7ds7914UNJiLSdVR/A==
-releaseDate: '2026-08-17T15:52:10.485Z'
+  - url: QTube-Setup-1.0.32.exe
+    sha512: 8a82WUlej5Stgfm846JXY2LLE9SnU7od8LbzRs3zBseAsYvWbUHYFM7G9dqHWWRh30NhnuBRI9DWHsARyKuMUg==
+    size: 91518586
+path: QTube-Setup-1.0.32.exe
+sha512: 8a82WUlej5Stgfm846JXY2LLE9SnU7od8LbzRs3zBseAsYvWbUHYFM7G9dqHWWRh30NhnuBRI9DWHsARyKuMUg==
+releaseDate: '2026-08-17T18:09:22.834Z'
