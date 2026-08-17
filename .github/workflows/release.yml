@@ -1,0 +1,33 @@
+name: Otomatik Release
+
+on:
+  push:
+    tags:
+      - 'v*' # v harfi ile başlayan bir tag atıldığında çalışır (Örn: v1.0.0)
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Release oluşturabilmek için yazma izni gereklidir
+
+    steps:
+      - name: Kodları Kopyala (Checkout)
+        uses: actions/checkout@v4
+
+      # Eğer uygulamanız derlenmesi gereken bir dilde ise (Örn: Node.js, Python, C#, Java vb.) 
+      # buraya derleme (build) adımlarını ekleyebilirsiniz.
+      # Örnek Node.js için:
+      # - name: Projeyi Kur ve Derle
+      #   run: |
+      #     npm install
+      #     npm run build
+
+      - name: GitHub Release Oluştur
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true # Commit geçmişine bakarak otomatik sürüm notu çıkarır
+          # files: |
+          #   dist/uygulama.zip  # Varsa eklemek istediğiniz derlenmiş dosyalar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
