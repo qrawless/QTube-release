@@ -1,0 +1,10 @@
+# ---------- Build ara dosyaları (commit'leme) ----------
+win-unpacked/
+builder-debug.yml
+builder-effective-config.yaml
+*.blockmap
+
+# ---------- İşletim sistemi ----------
+Thumbs.db
+Desktop.ini
+.DS_Store
