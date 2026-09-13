@@ -1,8 +1,8 @@
-version: 1.0.45
+version: 1.0.46
 files:
-  - url: QTube-Setup-1.0.45.exe
-    sha512: B+a8xMmkBtfIKkNmjDqqW2COSBPJsVxGoTT7NV97oeJhLS9iWDESesNfN0Aiteum7bukhwb7sAwi4Wm57215WA==
-    size: 91804427
-path: QTube-Setup-1.0.45.exe
-sha512: B+a8xMmkBtfIKkNmjDqqW2COSBPJsVxGoTT7NV97oeJhLS9iWDESesNfN0Aiteum7bukhwb7sAwi4Wm57215WA==
-releaseDate: '2026-09-12T14:30:59.419Z'
+  - url: QTube-Setup-1.0.46.exe
+    sha512: fTiSmnVFLl00ioYOpdmexFeckmN6D9WnlFE6Idxo84AzAhpmaCZVR5SKa9I4EIf/TKWVvt4ruHhBf3VTbazaGQ==
+    size: 91725871
+path: QTube-Setup-1.0.46.exe
+sha512: fTiSmnVFLl00ioYOpdmexFeckmN6D9WnlFE6Idxo84AzAhpmaCZVR5SKa9I4EIf/TKWVvt4ruHhBf3VTbazaGQ==
+releaseDate: '2026-09-13T03:24:04.925Z'
