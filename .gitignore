@@ -2,7 +2,6 @@
 win-unpacked/
 builder-debug.yml
 builder-effective-config.yaml
-*.blockmap
 
 # ---------- İşletim sistemi ----------
 Thumbs.db
