@@ -1,8 +1,8 @@
-version: 1.0.69
+version: 1.0.70
 files:
-  - url: QTube-Setup-1.0.69.exe
-    sha512: N1BKbr9CpjnEomhdGU7TeU9q+tejCjgZEQ4SLspypjbotOanCyClwu+OHM1hATAmiyyMmKIrvUHavcX2SiLF9g==
-    size: 91856348
-path: QTube-Setup-1.0.69.exe
-sha512: N1BKbr9CpjnEomhdGU7TeU9q+tejCjgZEQ4SLspypjbotOanCyClwu+OHM1hATAmiyyMmKIrvUHavcX2SiLF9g==
-releaseDate: '2026-09-21T00:46:52.466Z'
+  - url: QTube-Setup-1.0.70.exe
+    sha512: QoiiJAe0vMulgj544hxC8nPzHrmOFlA3Mizb3JxhrQQROnjgIozvqH8ZPK5w+lYXEFvFm+LuYkyDKbcIP9JmSQ==
+    size: 91858824
+path: QTube-Setup-1.0.70.exe
+sha512: QoiiJAe0vMulgj544hxC8nPzHrmOFlA3Mizb3JxhrQQROnjgIozvqH8ZPK5w+lYXEFvFm+LuYkyDKbcIP9JmSQ==
+releaseDate: '2026-09-21T01:17:18.422Z'
